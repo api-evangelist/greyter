@@ -64,5 +64,14 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Greyter is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Greyter Water Systems Inc. was an Ontario, Canada manufacturer of onsite greywater recycling and
+water reuse systems, founded in 2012. Its Greyter HOME residential system held NSF/ANSI 350 Class R
+certification and a commercial line served water reuse in larger buildings.
+
+**Status: defunct.** Greyter Water Systems Inc. filed for bankruptcy on 2026-01-08; GlassRatner
+Restructuring Inc. was appointed Trustee and the company's IP, patents and customer lists were placed
+into an asset sale process. `greyter.com` is now a GoDaddy parked domain — every path returns the same
+114-byte redirect to `/lander` — and the `mygreyter.com` customer portal origin returns HTTP 526.
+
+The company never published a developer program, public API, SDK, webhooks, or any machine-readable
+specification. This profile is retained as a historical record; there is no API surface to enrich.

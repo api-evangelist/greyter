@@ -1,23 +1,83 @@
 aid: greyter
 name: Greyter
-description: 'Greyter is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Greyter Water Systems Inc. was an Ontario, Canada manufacturer of onsite greywater
+  recycling and water reuse systems, founded in 2012 after acquiring the assets of the defunct
+  Brac Systems. Its flagship Greyter HOME captured water from showers and bathtubs, treated it,
+  and returned clear, odor-free water for toilet flushing, cutting a family home's indoor water
+  consumption by up to 25 percent; it earned NSF/ANSI 350 Class R certification in early 2019 as
+  the first compact residential greywater reuse system to hold that designation. A scaled
+  commercial line served water harvesting and reuse for toilet flushing and cooling towers in
+  multi-unit and institutional buildings, and the systems were installed in more than a dozen
+  countries. The company raised roughly $13M through a Series B. Its only software was an
+  end-user monitoring surface — the mygreyter.com portal and a consumer Greyter mobile app used
+  by owners to watch water savings — and it never published a developer program, public API, SDK,
+  webhooks, or any machine-readable specification. Greyter Water Systems Inc. filed for bankruptcy
+  on January 8, 2026, with GlassRatner Restructuring Inc. appointed Trustee and its intellectual
+  property, patents and customer lists placed into an asset sale process. This profile is retained
+  as a historical record; there is no API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/greyter/refs/heads/main/apis.yml
 x-type: company
+x-status: defunct
+x-bankruptcy-date: '2026-01-08'
+x-bankruptcy-trustee: GlassRatner Restructuring Inc.
+x-bankruptcy-record: https://glassratner.ca/engagements/greyter-water-systems-inc/
 x-source: harvest:secondary-market
 x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+x-tier-reason: defunct-no-api-surface
+x-domain-status: parked
+x-domain-note: 'greyter.com is no longer operated by the company. It is a GoDaddy parked domain
+  (ns71/ns72.domaincontrol.com): every path — including /openapi.json, /graphql, /mcp and every
+  /.well-known/* location — returns the identical 114-byte HTML stub that redirects to /lander,
+  and sitemap.xml lists only /lander. The /robots.txt and /llms.txt served there are GoDaddy
+  parking-lander boilerplate, not provider-published documents, and are deliberately NOT wired
+  as pointers. The last live archived snapshot of the real site is 2026-06-08. mygreyter.com,
+  the customer portal, still resolves through Cloudflare but its origin is dead (HTTP 526).'
+x-harvest-note: The inherited stub carried a Website pointer to https://www.nasdaqprivatemarket.com/,
+  which is the secondary-market harvest SOURCE and not this company's website. It was a
+  misattribution and has been removed.
+specificationVersion: '0.23'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Defunct
+- Water
+- Water Recycling
+- Greywater
+- Water Reuse
+- Sustainability
+- Building Technology
+- Cleantech
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: https://www.nasdaqprivatemarket.com/
+common: []
+x-enrichment:
+  date: '2026-08-22'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: Greyter Water Systems Inc. filed for bankruptcy on 2026-01-08 with GlassRatner
+    Restructuring Inc. as Trustee, and greyter.com is now a GoDaddy parked domain that answers
+    every path — /openapi.json, /graphql, /mcp and all /.well-known/* included — with the same
+    114-byte redirect to /lander, while the mygreyter.com customer portal origin returns
+    Cloudflare 526.
+  evidence:
+  - url: https://greyter.com/
+    status: 200
+  - url: https://greyter.com/openapi.json
+    status: 200
+  - url: https://greyter.com/.well-known/agent-card.json
+    status: 200
+  - url: https://mygreyter.com/
+    status: 526
+  - url: https://glassratner.ca/engagements/greyter-water-systems-inc/
+    status: 200
+  checked: '2026-08-22'
