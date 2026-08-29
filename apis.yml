@@ -16,6 +16,9 @@ description: Greyter Water Systems Inc. was an Ontario, Canada manufacturer of o
   property, patents and customer lists placed into an asset sale process. This profile is retained
   as a historical record; there is no API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/greyter/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Its only software was an end-user monitoring surface — the mygreyter.com portal and a consumer Greyter mobile app used by owners to watch water savings — and it never published a developer program, pu"
 x-type: company
 x-status: defunct
 x-bankruptcy-date: '2026-01-08'
