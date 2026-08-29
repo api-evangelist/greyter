@@ -35,6 +35,17 @@ x-domain-note: 'greyter.com is no longer operated by the company. It is a GoDadd
 x-harvest-note: The inherited stub carried a Website pointer to https://www.nasdaqprivatemarket.com/,
   which is the secondary-market harvest SOURCE and not this company's website. It was a
   misattribution and has been removed.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.23'
 created: '2026-08-22'
 modified: '2026-08-22'
